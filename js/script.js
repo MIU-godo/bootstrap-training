@@ -1,9 +1,9 @@
 $(function(){
-  // サムネールをクリック
-  $("a").click(function(){
-    // 拡大画像のsrc属性に、選択したa要素のhref属性を入れる
+  $(".carousel-item img").on("click", function(){
+    alert("clicked!!");
     $("figure img").attr("src", $(this).attr("href"));
-
-    return false;
+  });
+  $("figure img").on("click", function(){
+    alert("clicked!!");
   });
 });
